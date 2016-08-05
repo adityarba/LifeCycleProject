@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fragment_transaction_layout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add 1"
+        android:id="@+id/button1_frag_trans"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add 2"
+        android:id="@+id/button2_frag_trans"
+        android:layout_below="@+id/button1_frag_trans"
+        android:onClick="add2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove 1"
+        android:id="@+id/button3_frag_trans"
+        android:layout_toRightOf="@+id/button1_frag_trans"
+        android:onClick="remove1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove 2"
+        android:id="@+id/button4_frag_trans"
+        android:layout_toRightOf="@+id/button2_frag_trans"
+        android:layout_below="@+id/button3_frag_trans"
+        android:onClick="remove2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace 1"
+        android:id="@+id/button5_frag_trans"
+        android:layout_toRightOf="@+id/button3_frag_trans"
+        android:onClick="replace1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace 2"
+        android:id="@+id/button6_frag_trans"
+        android:layout_toRightOf="@+id/button4_frag_trans"
+        android:layout_below="@+id/button5_frag_trans"
+        android:onClick="replace2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear List"
+        android:id="@+id/button_clear"
+        android:layout_toRightOf="@+id/button5_frag_trans"
+        android:onClick="clearList"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/button2_frag_trans"
+        android:orientation="vertical"
+        android:id="@+id/fragment_display"
+        ></LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fragment_display"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fragment_listview"
+        ></ListView>
+
+</RelativeLayout>
